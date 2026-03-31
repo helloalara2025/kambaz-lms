@@ -2,7 +2,7 @@
 
 A full-stack learning management system built with React, Next.js, Node.js, Express, and MongoDB. Supports course management, module organization, quiz creation with auto-grading, enrollment workflows, and role-based access for students and faculty.
 
-![Kambaz Dashboard](lms.svg)
+!(lms.svg)
 
 ## Features
 
