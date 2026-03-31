@@ -1,0 +1,239 @@
+[
+  {
+    "_id": "Q101",
+    "title": "Q1 - HTML & CSS Basics",
+    "course": "RS101",
+    "description": "Test your knowledge of HTML and CSS fundamentals",
+    "quizType": "GRADED_QUIZ",
+    "points": 10,
+    "assignmentGroup": "QUIZZES",
+    "shuffleAnswers": true,
+    "timeLimit": 20,
+    "multipleAttempts": false,
+    "howManyAttempts": 1,
+    "showCorrectAnswers": "IMMEDIATELY",
+    "accessCode": "",
+    "oneQuestionAtATime": true,
+    "webcamRequired": false,
+    "lockQuestionsAfterAnswering": false,
+    "dueDate": "2025-05-15T23:59:00.000Z",
+    "availableDate": "2025-05-01T00:00:00.000Z",
+    "untilDate": "2025-05-20T23:59:00.000Z",
+    "published": true,
+    "questions": [
+      {
+        "_id": "Q101-1",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Question 1",
+        "points": 3,
+        "question": "What does HTML stand for?",
+        "choices": [
+          "Hyper Text Markup Language",
+          "High Tech Modern Language",
+          "Home Tool Markup Language",
+          "Hyperlinks and Text Markup Language"
+        ],
+        "correctAnswers": ["Hyper Text Markup Language"]
+      },
+      {
+        "_id": "Q101-2",
+        "type": "TRUE_FALSE",
+        "title": "Question 2",
+        "points": 2,
+        "question": "CSS stands for Cascading Style Sheets",
+        "choices": ["True", "False"],
+        "correctAnswers": ["True"]
+      },
+      {
+        "_id": "Q101-3",
+        "type": "FILL_IN_BLANK",
+        "title": "Question 3",
+        "points": 5,
+        "question": "The _____ tag is used to create a hyperlink in HTML",
+        "choices": [],
+        "correctAnswers": ["a", "<a>", "anchor"]
+      }
+    ]
+  },
+
+  {
+    "_id": "Q102",
+    "title": "Q2 - Rocket Engine Types",
+    "course": "RS101",
+    "description": "Assessment on different types of rocket engines and their applications",
+    "quizType": "GRADED_QUIZ",
+    "points": 15,
+    "assignmentGroup": "QUIZZES",
+    "shuffleAnswers": true,
+    "timeLimit": 30,
+    "multipleAttempts": true,
+    "howManyAttempts": 2,
+    "showCorrectAnswers": "AFTER_DUE_DATE",
+    "accessCode": "",
+    "oneQuestionAtATime": true,
+    "webcamRequired": false,
+    "lockQuestionsAfterAnswering": false,
+    "dueDate": "2025-05-20T23:59:00.000Z",
+    "availableDate": "2025-05-05T00:00:00.000Z",
+    "untilDate": "2025-05-25T23:59:00.000Z",
+    "published": true,
+    "questions": [
+      {
+        "_id": "Q102-1",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Question 1",
+        "points": 5,
+        "question": "Which type of rocket engine uses solid fuel?",
+        "choices": ["Solid Rocket Motor", "Liquid Rocket Engine", "Hybrid Rocket", "Ion Drive"],
+        "correctAnswers": ["Solid Rocket Motor"]
+      },
+      {
+        "_id": "Q102-2",
+        "type": "TRUE_FALSE",
+        "title": "Question 2",
+        "points": 3,
+        "question": "Liquid rocket engines provide more control than solid rocket motors",
+        "choices": ["True", "False"],
+        "correctAnswers": ["True"]
+      },
+      {
+        "_id": "Q102-3",
+        "type": "FILL_IN_BLANK",
+        "title": "Question 3",
+        "points": 7,
+        "question": "The _____ is the component where fuel and oxidizer mix and burn",
+        "choices": [],
+        "correctAnswers": ["combustion chamber", "chamber"]
+      }
+    ]
+  },
+
+  {
+    "_id": "Q103",
+    "title": "Q3 - Nozzle Design (Unpublished)",
+    "course": "RS101",
+    "description": "Practice quiz on rocket nozzle design principles",
+    "quizType": "PRACTICE_QUIZ",
+    "points": 20,
+    "assignmentGroup": "QUIZZES",
+    "shuffleAnswers": true,
+    "timeLimit": 25,
+    "multipleAttempts": true,
+    "howManyAttempts": 3,
+    "showCorrectAnswers": "IMMEDIATELY",
+    "accessCode": "",
+    "oneQuestionAtATime": false,
+    "webcamRequired": false,
+    "lockQuestionsAfterAnswering": false,
+    "dueDate": "2025-05-25T23:59:00.000Z",
+    "availableDate": "2025-05-10T00:00:00.000Z",
+    "untilDate": "2025-05-30T23:59:00.000Z",
+    "published": false,
+    "questions": []
+  },
+
+  {
+    "_id": "Q201",
+    "title": "Aerodynamics Midterm",
+    "course": "RS102",
+    "description": "Comprehensive midterm covering aerodynamics fundamentals",
+    "quizType": "GRADED_QUIZ",
+    "points": 100,
+    "assignmentGroup": "EXAMS",
+    "shuffleAnswers": true,
+    "timeLimit": 60,
+    "multipleAttempts": false,
+    "howManyAttempts": 1,
+    "showCorrectAnswers": "NEVER",
+    "accessCode": "AERO2025",
+    "oneQuestionAtATime": true,
+    "webcamRequired": true,
+    "lockQuestionsAfterAnswering": true,
+    "dueDate": "2025-06-01T23:59:00.000Z",
+    "availableDate": "2025-06-01T08:00:00.000Z",
+    "untilDate": "2025-06-01T23:59:00.000Z",
+    "published": true,
+    "questions": [
+      {
+        "_id": "Q201-1",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Question 1",
+        "points": 10,
+        "question": "What principle explains why airplanes can fly?",
+        "choices": [
+          "Bernoulli's Principle",
+          "Newton's Third Law only",
+          "Archimedes' Principle",
+          "Boyle's Law"
+        ],
+        "correctAnswers": ["Bernoulli's Principle"]
+      },
+      {
+        "_id": "Q201-2",
+        "type": "TRUE_FALSE",
+        "title": "Question 2",
+        "points": 10,
+        "question": "Subsonic flow occurs when the flow velocity is less than the speed of sound",
+        "choices": ["True", "False"],
+        "correctAnswers": ["True"]
+      },
+      {
+        "_id": "Q201-3",
+        "type": "FILL_IN_BLANK",
+        "title": "Question 3",
+        "points": 15,
+        "question": "The force that opposes an aircraft's motion through the air is called _____",
+        "choices": [],
+        "correctAnswers": ["drag", "air resistance"]
+      }
+    ]
+  },
+  
+  {
+    "_id": "Q301",
+    "title": "Spacecraft Systems Quiz",
+    "course": "RS103",
+    "description": "Test on spacecraft structural design and systems",
+    "quizType": "GRADED_QUIZ",
+    "points": 50,
+    "assignmentGroup": "QUIZZES",
+    "shuffleAnswers": true,
+    "timeLimit": 45,
+    "multipleAttempts": false,
+    "howManyAttempts": 1,
+    "showCorrectAnswers": "AFTER_DUE_DATE",
+    "accessCode": "",
+    "oneQuestionAtATime": true,
+    "webcamRequired": false,
+    "lockQuestionsAfterAnswering": false,
+    "dueDate": "2025-05-30T23:59:00.000Z",
+    "availableDate": "2025-05-15T00:00:00.000Z",
+    "untilDate": "2025-06-05T23:59:00.000Z",
+    "published": true,
+    "questions": [
+      {
+        "_id": "Q301-1",
+        "type": "MULTIPLE_CHOICE",
+        "title": "Question 1",
+        "points": 10,
+        "question": "What is the primary purpose of a spacecraft's thermal control system?",
+        "choices": [
+          "Maintain proper operating temperatures",
+          "Generate electricity",
+          "Provide propulsion",
+          "Store fuel"
+        ],
+        "correctAnswers": ["Maintain proper operating temperatures"]
+      },
+      {
+        "_id": "Q301-2",
+        "type": "FILL_IN_BLANK",
+        "title": "Question 2",
+        "points": 15,
+        "question": "The path a spacecraft follows around a celestial body is called an _____",
+        "choices": [],
+        "correctAnswers": ["orbit", "orbital path"]
+      }
+    ]
+  }
+]

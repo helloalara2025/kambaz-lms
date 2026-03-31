@@ -1,0 +1,247 @@
+/* This is the CSS stylesheet for Lab 2 */
+p {
+  background-color: yellow;
+  color: black;
+}
+
+p#wd-id-selector-1 {
+  background-color: red;
+  color: white;
+}
+
+.wd-class-selector {
+  background-color: yellow;
+  color: blue;
+}
+.wd-selector-1 .wd-selector-3 {
+  /* refers to .wd-selector-3 as a descendant of .wd-selector-1*/
+
+  background-color: red;
+  color: white;
+}
+.wd-selector-2 > .wd-selector-3 > .wd-selector-4 {
+  /* refers to .wd-selector-4 as a direct child of .wd-selector-3 which is a direct child of .wd-selector-2 */
+  background-color: yellow;
+  color: blue;
+}
+
+/* Practicing to declare several useful color classes. Copy the HTML code below into a new file called ForegroundColors.tsx. Import the file into Lab2 and confirm it renders as shown.
+*/
+.wd-fg-color-black {
+  color: black;
+}
+.wd-fg-color-white {
+  color: white;
+}
+.wd-fg-color-blue {
+  color: #7070ff;
+}
+.wd-fg-color-red {
+  color: #ff7070;
+}
+.wd-fg-color-green {
+  color: green;
+}
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+.wd-bg-color-green {
+  background-color: green;
+}
+.wd-bg-color-gray {
+  background-color: lightgray;
+}
+.some-css-selector {
+  color: blue;
+}
+
+/* Section 2.1.9*/
+.some-selector {
+  border-width: 10px;
+  border-style: dashed;
+  border-color: red;
+}
+.wd-border-fat {
+  border-width: 20px 30px 20px 30px;
+}
+.wd-border-thin {
+  border-width: 4px;
+}
+.wd-border-solid {
+  border-style: solid;
+}
+.wd-border-dashed {
+  border-style: dashed;
+}
+.wd-border-yellow {
+  border-color: #ffff07;
+}
+.wd-border-red {
+  border-color: #ff7070;
+}
+.wd-border-blue {
+  border-color: #7070ff;
+}
+
+/* 2.1.10 Styling an HTML Tag's Martins and Paddings with CSS*/
+.wd-padded-top-left {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.wd-padded-bottom-right {
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+.wd-padding-fat {
+  padding: 50px;
+}
+
+.wd-margins-bottom {
+  margin-bottom: 50px;
+}
+
+.wd-margins-right-left {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.wd-margin-top {
+  margin-top: 50px;
+}
+
+/* HTML Tag's Corners with CSS */
+.wd-rounded-corners-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.wd-rounded-corners-bottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.wd-rounded-corners-all-around {
+  border-radius: 50px;
+}
+.wd-rounded-corners-inline {
+  border-radius: 30px 0px 20px 50px;
+}
+
+/* HTML Tag Dimensions with CSS*/
+.wd-dimension-portrait {
+  width: 75px;
+  height: 100px;
+}
+
+.wd-dimension-landscape {
+  width: 100px;
+  height: 75px;
+}
+.wd-dimension-square {
+  width: 75px;
+  height: 75px;
+}
+
+/*  Styling an HTML Tag's Relative Position with CSS*/
+.wd-pos-relative-nudge-up-right {
+  position: relative;
+  bottom: 30px;
+  left: 30px;
+}
+.wd-pos-relative-nudge-down-right {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.wd-pos-relative {
+  position: relative;
+}
+
+.wd-pos-fixed {
+  position: fixed;
+  right: 0px;
+  bottom: 50%;
+}
+
+.wd-zindex-bring-to-front {
+  z-index: 10;
+}
+
+/* Floating images and content with CSS */
+.wd-float-left {
+  float: left;
+  height: 100px;
+}
+
+.wd-float-right {
+  float: right;
+  height: 100px;
+}
+
+.wd-float-done {
+  clear: both;
+}
+
+/* Layout out content in a grid using css */
+.wd-grid-row {
+   clear: both;
+}
+.wd-grid-col-half-page {
+   width: 50%;
+   float: left;
+}
+.wd-grid-col-third-page {
+   width: 33%;
+   float: left;
+}
+.wd-grid-col-two-thirds-page {
+   width: 67%;
+   float: left;
+}
+.wd-grid-col-left-sidebar {
+   width: 20%;
+   float: left;
+}
+.wd-grid-col-main-content {
+   width: 60%;
+   float: left;
+}
+.wd-grid-col-right-sidebar {
+   width: 20%;
+   float: left;
+}
+/* .wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+.wd-flex-grow-1 {
+  flex-grow: 1;
+} */
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* Screen Size Label 2.3.5 Hiding and Showing responsive HTML Content with React Bootstrap*/
+#wd-screen-size-label {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  z-index: 1000;
+  width: 220px;
+  text-align: center;
+}
+
+

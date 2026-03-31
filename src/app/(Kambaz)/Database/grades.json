@@ -1,0 +1,71 @@
+[
+  { "_id": "G234A101", "student": "234", "assignment": "A101", "grade": 92 },
+  { "_id": "G456A101", "student": "456", "assignment": "A101", "grade": 81 },
+  { "_id": "G567A101", "student": "567", "assignment": "A101", "grade": 88 },
+  { "_id": "G890A101", "student": "890", "assignment": "A101", "grade": 95 },
+
+  { "_id": "G234A102", "student": "234", "assignment": "A102", "grade": 87 },
+  { "_id": "G456A102", "student": "456", "assignment": "A102", "grade": 78 },
+  { "_id": "G567A102", "student": "567", "assignment": "A102", "grade": 91 },
+  { "_id": "G890A102", "student": "890", "assignment": "A102", "grade": 84 },
+
+  { "_id": "G234A103", "student": "234", "assignment": "A103", "grade": 93 },
+  { "_id": "G456A103", "student": "456", "assignment": "A103", "grade": 88 },
+  { "_id": "G567A103", "student": "567", "assignment": "A103", "grade": 79 },
+  { "_id": "G890A103", "student": "890", "assignment": "A103", "grade": 97 },
+
+  { "_id": "G234A201", "student": "234", "assignment": "A201", "grade": 90 },
+  { "_id": "G456A201", "student": "456", "assignment": "A201", "grade": 84 },
+  { "_id": "G567A201", "student": "567", "assignment": "A201", "grade": 76 },
+  { "_id": "G890A201", "student": "890", "assignment": "A201", "grade": 89 },
+
+  { "_id": "G234A202", "student": "234", "assignment": "A202", "grade": 85 },
+  { "_id": "G456A202", "student": "456", "assignment": "A202", "grade": 74 },
+  { "_id": "G567A202", "student": "567", "assignment": "A202", "grade": 92 },
+  { "_id": "G890A202", "student": "890", "assignment": "A202", "grade": 87 },
+
+  { "_id": "G234A203", "student": "234", "assignment": "A203", "grade": 98 },
+  { "_id": "G456A203", "student": "456", "assignment": "A203", "grade": 85 },
+  { "_id": "G567A203", "student": "567", "assignment": "A203", "grade": 89 },
+  { "_id": "G890A203", "student": "890", "assignment": "A203", "grade": 91 },
+
+  { "_id": "G234A301", "student": "234", "assignment": "A301", "grade": 79 },
+  { "_id": "G456A301", "student": "456", "assignment": "A301", "grade": 82 },
+  { "_id": "G567A301", "student": "567", "assignment": "A301", "grade": 94 },
+  { "_id": "G890A301", "student": "890", "assignment": "A301", "grade": 88 },
+
+  { "_id": "G234A302", "student": "234", "assignment": "A302", "grade": 91 },
+  { "_id": "G456A302", "student": "456", "assignment": "A302", "grade": 90 },
+  { "_id": "G567A302", "student": "567", "assignment": "A302", "grade": 78 },
+  { "_id": "G890A302", "student": "890", "assignment": "A302", "grade": 86 },
+
+  { "_id": "G234A303", "student": "234", "assignment": "A303", "grade": 83 },
+  { "_id": "G456A303", "student": "456", "assignment": "A303", "grade": 77 },
+  { "_id": "G567A303", "student": "567", "assignment": "A303", "grade": 80 },
+  { "_id": "G890A303", "student": "890", "assignment": "A303", "grade": 92 },
+
+  { "_id": "G234A304", "student": "234", "assignment": "A304", "grade": 96 },
+  { "_id": "G456A304", "student": "456", "assignment": "A304", "grade": 85 },
+  { "_id": "G567A304", "student": "567", "assignment": "A304", "grade": 82 },
+  { "_id": "G890A304", "student": "890", "assignment": "A304", "grade": 88 },
+
+  { "_id": "G234A305", "student": "234", "assignment": "A305", "grade": 75 },
+  { "_id": "G456A305", "student": "456", "assignment": "A305", "grade": 93 },
+  { "_id": "G567A305", "student": "567", "assignment": "A305", "grade": 88 },
+  { "_id": "G890A305", "student": "890", "assignment": "A305", "grade": 82 },
+
+  { "_id": "G234A306", "student": "234", "assignment": "A306", "grade": 89 },
+  { "_id": "G456A306", "student": "456", "assignment": "A306", "grade": 91 },
+  { "_id": "G567A306", "student": "567", "assignment": "A306", "grade": 84 },
+  { "_id": "G890A306", "student": "890", "assignment": "A306", "grade": 86 },
+
+  { "_id": "G234A307", "student": "234", "assignment": "A307", "grade": 90 },
+  { "_id": "G456A307", "student": "456", "assignment": "A307", "grade": 81 },
+  { "_id": "G567A307", "student": "567", "assignment": "A307", "grade": 88 },
+  { "_id": "G890A307", "student": "890", "assignment": "A307", "grade": 92 },
+
+  { "_id": "G234A308", "student": "234", "assignment": "A308", "grade": 94 },
+  { "_id": "G456A308", "student": "456", "assignment": "A308", "grade": 79 },
+  { "_id": "G567A308", "student": "567", "assignment": "A308", "grade": 83 },
+  { "_id": "G890A308", "student": "890", "assignment": "A308", "grade": 90 }
+]

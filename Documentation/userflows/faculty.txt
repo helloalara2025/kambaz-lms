@@ -1,0 +1,61 @@
+Faculty Manages Quizzes
+├── 1. Log in as FACULTY
+│
+├── 2. Dashboard (/)
+│   └── Click course → /Courses/:cid
+│
+├── 3. Course Home (/Courses/:cid)
+│   └── Click "Quizzes" → /Courses/:cid/Quizzes
+│
+├── 4. Quiz List (faculty view)
+│   ├── Shows ALL quizzes (published + unpublished)
+│   ├── Top-right: "+ Quiz" button
+│   └── Each row:
+│       ├── Title
+│       ├── Availability, Due date
+│       ├── Points, # Questions
+│       ├── Publish/Unpublish icon
+│       └── 3-dot menu: Edit, Delete, Publish/Unpublish, Preview
+│
+├── 5. Create quiz
+│   ├── Click "+ Quiz"
+│   └── POST /api/courses/:cid/quizzes
+│       ├── Creates default quiz (Untitled, unpublished)
+│       └── Redirect → /Courses/:cid/Quizzes/:qid/edit
+│
+├── 6. Edit quiz (/Courses/:cid/Quizzes/:qid/edit)
+│   ├── General:
+│   │   ├── Title, description
+│   │   ├── Points, assignment group, quizType
+│   ├── Options:
+│   │   ├── Shuffle answers
+│   │   ├── Time limit
+│   │   ├── Multiple attempts + howManyAttempts
+│   │   ├── Show correct answers timing
+│   │   ├── Access code
+│   │   ├── One question at a time
+│   │   ├── Webcam required
+│   │   └── Lock questions after answering
+│   ├── Availability:
+│   │   ├── Available from
+│   │   ├── Until
+│   │   └── Due date
+│   └── Questions:
+│       ├── Add question (MC/TF/Fill)
+│       ├── Edit question
+│       └── Delete question
+│
+├── 7. Save changes
+│   └── PUT /api/courses/:cid/quizzes/:qid on edits
+│
+├── 8. Publish quiz
+│   ├── From list:
+│   │   └── Click publish icon or menu item
+│   └── PUT /api/courses/:cid/quizzes/:qid/publish
+│       ├── Toggle published flag
+│       └── Quiz becomes visible to students (within dates)
+│
+└── 9. Optional: Preview
+    ├── From 3-dot menu → "Preview"
+    └── /Courses/:cid/Quizzes/:qid/preview
+        └── Faculty sees student-style view (no attempt created)

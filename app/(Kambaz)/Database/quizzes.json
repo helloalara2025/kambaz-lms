@@ -1,0 +1,63 @@
+[
+  {
+    "_id": "Q101",
+    "title": "Q1 - HTML",
+    "description": "Basic HTML knowledge quiz",
+    "quizType": "Graded Quiz",
+    "points": 20,
+    "assignmentGroup": "Quizzes",
+    "shuffleAnswers": true,
+    "timeLimit": 20,
+    "multipleAttempts": false,
+    "showCorrectAnswers": false,
+    "accessCode": "",
+    "oneQuestionAtATime": true,
+    "webcamRequired": false,
+    "lockQuestionsAfterAnswering": false,
+    "dueDate": "2024-05-25T23:59",
+    "availableDate": "2024-05-15T00:00",
+    "untilDate": "2024-05-25T23:59",
+    "published": true,
+    "courseId": "RS101",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "title": "HTML Tag",
+        "points": 5,
+        "question": "Which tag is used to create a hyperlink?",
+        "choices": ["<a>", "<img>", "<div>", "<link>"],
+        "correctAnswer": "<a>"
+      },
+      {
+        "type": "true-false",
+        "title": "HTML5",
+        "points": 5,
+        "question": "HTML5 is the latest version of HTML.",
+        "choices": ["True", "False"],
+        "correctAnswer": "true"
+      }
+    ]
+  },
+  {
+    "_id": "Q102",
+    "title": "Q2 - CSS",
+    "description": "CSS Styling quiz",
+    "quizType": "Graded Quiz",
+    "points": 10,
+    "assignmentGroup": "Quizzes",
+    "shuffleAnswers": true,
+    "timeLimit": 15,
+    "multipleAttempts": true,
+    "showCorrectAnswers": true,
+    "accessCode": "",
+    "oneQuestionAtATime": false,
+    "webcamRequired": false,
+    "lockQuestionsAfterAnswering": false,
+    "dueDate": "2024-06-01T23:59",
+    "availableDate": "2024-05-20T00:00",
+    "untilDate": "2024-06-01T23:59",
+    "published": false,
+    "courseId": "RS101",
+    "questions": []
+  }
+]

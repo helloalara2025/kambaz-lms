@@ -1,0 +1,28 @@
+Anonymous User Flow
+├── 1. Visit site (not logged in)
+│   ├── Sees public landing / login page
+│   └── No access to courses or quizzes yet
+│
+├── 2. Choose action
+│   ├── Option A: Log in (existing account)
+│   └── Option B: Sign up (new account)
+│
+├── 3A. Log in
+│   ├── Enter email + password
+│   ├── On success:
+│   │   ├── Session created (req.session.currentUser)
+│   │   └── Redirect to Dashboard (/)
+│   └── On failure:
+│       └── Show error, stay on login
+│
+└── 3B. Sign up
+    ├── Enter profile info:
+    │   ├── Name, email, password
+    │   └── Role: FACULTY or STUDENT
+    ├── Create User in DB
+    ├── Auto-login or redirect to login
+    └── After login:
+        ├── FACULTY:
+        │   └── Dashboard shows courses they create / manage
+        └── STUDENT:
+            └── Dashboard shows courses they are enrolled in

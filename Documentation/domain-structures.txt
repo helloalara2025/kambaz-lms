@@ -1,0 +1,65 @@
+Domains
+├── User
+│   ├── _id: String
+│   ├── firstName: String
+│   ├── lastName: String
+│   ├── email: String
+│   └── role: "FACULTY" | "STUDENT"
+│
+├── Course
+│   ├── _id: String
+│   ├── title: String
+│   ├── description: String
+│   ├── facultyId: String (FK → User)
+│   └── students: [String] (FK → User)
+│
+├── Quiz
+│   ├── _id: String
+│   ├── course: String (FK → Course)
+│   ├── title: String
+│   ├── description: String
+│   ├── points: Number
+│   ├── published: Boolean
+│   ├── quizType: "GRADED_QUIZ" | "PRACTICE_QUIZ" | "GRADED_SURVEY"
+│   ├── assignmentGroup: "QUIZ" | "ASSIGNMENT" | "EXAM"
+│   ├── shuffleAnswers: Boolean
+│   ├── timeLimit: Number | null
+│   ├── multipleAttempts: Boolean
+│   ├── howManyAttempts: Number
+│   ├── showCorrectAnswers: "IMMEDIATELY" | "AFTER_DUE" | "NEVER"
+│   ├── accessCode: String | null
+│   ├── oneQuestionAtATime: Boolean
+│   ├── webcamRequired: Boolean
+│   ├── lockQuestionsAfterAnswering: Boolean
+│   ├── dueDate: Date | null
+│   ├── availableDate: Date | null
+│   ├── untilDate: Date | null
+│   └── questions: [Question]
+│
+├── Question
+│   ├── _id: String
+│   ├── type: "MULTIPLE_CHOICE" | "TRUE_FALSE" | "FILL_IN_BLANK"
+│   ├── title: String
+│   ├── question: String
+│   ├── points: Number
+│   ├── choices: [String]          (MC only)
+│   └── correctAnswers: [String]
+│
+├── QuizAttempt
+│   ├── _id: String
+│   ├── quiz: String (FK → Quiz)
+│   ├── student: String (FK → User)
+│   ├── course: String (FK → Course)
+│   ├── attemptNumber: Number
+│   ├── completed: Boolean
+│   ├── startedAt: Date
+│   ├── submittedAt: Date | null
+│   ├── score: Number
+│   ├── totalPoints: Number
+│   └── answers: [AttemptAnswer]
+│
+└── AttemptAnswer
+    ├── questionId: String
+    ├── answer: [String]
+    ├── isCorrect: Boolean
+    └── pointsEarned: Number

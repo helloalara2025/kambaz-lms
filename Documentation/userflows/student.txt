@@ -1,0 +1,54 @@
+Student Takes Quiz
+├── 1. Log in as STUDENT
+│
+├── 2. Dashboard (/)
+│   └── Click course → /Courses/:cid
+│
+├── 3. Course Home (/Courses/:cid)
+│   └── Click "Quizzes" → /Courses/:cid/Quizzes
+│
+├── 4. Quiz List (student view)
+│   ├── Sees only published quizzes
+│   ├── Each row shows:
+│   │   ├── Title
+│   │   ├── Availability, Due date
+│   │   ├── Points, # Questions
+│   │   └── Last Score + Attempts
+│   └── Click quiz title → /Courses/:cid/Quizzes/:qid
+│
+├── 5. Quiz Details (student view)
+│   ├── Read-only quiz info
+│   └── Click "Take Quiz" → /Courses/:cid/Quizzes/:qid/take
+│
+├── 6. Take Quiz screen
+│   ├── Page loads quiz + (if needed) access code prompt
+│   ├── On start:
+│   │   └── POST /api/courses/:cid/quizzes/:qid/attempts
+│   │       ├── Checks multipleAttempts / howManyAttempts
+│   │       └── If no attempts left → error
+│   ├── If allowed:
+│   │   └── New attempt created (attemptNumber, startedAt, etc.)
+│   ├── If accessCode required:
+│   │   └── Must match before questions unlock
+│   └── If timeLimit set:
+│       └── Timer starts counting down
+│
+├── 7. Answer questions
+│   ├── Navigate questions (oneQuestionAtATime optional)
+│   ├── Answers stored locally in state
+│   └── Optional: Save (PUT /attempts/:attemptId) for drafts
+│
+├── 8. Submit quiz
+│   ├── Click "Submit"
+│   └── POST /attempts/:attemptId/submit with answers
+│
+├── 9. Backend grading
+│   ├── Compare each answer with correctAnswers
+│   ├── Mark isCorrect / pointsEarned per AttemptAnswer
+│   ├── Sum total score
+│   └── Mark attempt completed + submittedAt
+│
+└── 10. Results screen
+    ├── Show score and total points
+    ├── Show/hide correct answers per showCorrectAnswers
+    └── If more attempts allowed, show "Take Again"

@@ -1,0 +1,276 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+  {
+    "_id": "A304",
+    "title": "A4",
+    "course": "RS104",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A305",
+    "title": "A5",
+    "course": "RS105",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A306",
+    "title": "A6",
+    "course": "RS106",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A307",
+    "title": "A7",
+    "course": "RS107",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  },
+  {
+    "_id": "A308",
+    "title": "A8",
+    "course": "RS108",
+    "description": "The assignment is available online. Submit a link to the landing page",
+    "points": 100,
+    "group": "Assignments",
+    "gradeDisplay": "Percentage",
+    "submissionType": "Online",
+    "onlineOptions": [
+      "Text Entry",
+      "Website URL",
+      "Media Recordings",
+      "Student Annotation",
+      "File Uploads"
+    ],
+    "assignTo": "Everyone",
+    "dueDate": "2025-10-06",
+    "availableFrom": "2025-10-05",
+    "availableUntil": "2025-10-06"
+  }
+]

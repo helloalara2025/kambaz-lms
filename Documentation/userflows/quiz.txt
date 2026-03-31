@@ -1,0 +1,118 @@
+Frontend ↔ Backend Overview
+├── Student: Quiz list (/Courses/:cid/Quizzes)
+│   ├── UI:
+│   │   ├── QuizList page (React/Next)
+│   │   ├── Uses Redux for quizzes + currentUser
+│   │   └── Renders <QuizListItem> rows
+│   │
+│   ├── Data flow:
+│   │   ├── On load:
+│   │   │   └── client.findQuizzesForCourse(cid)
+│   │   │       → GET /api/courses/:courseId/quizzes
+│   │   │       → Backend reads req.session.currentUser
+│   │   │       → If STUDENT:
+│   │   │           ├── Filter to published quizzes
+│   │   │           ├── Compute latestAttempt + attemptCount
+│   │   │           └── Return quizzes with latestScore, attemptCount
+│   │   │
+│   │   └── Redux:
+│   │       └── setQuizzes(response)
+│   │
+│   └── Rendering:
+│       ├── <QuizListItem quiz={quiz} isStudent isFaculty ... />
+│       ├── Shows:
+│       │   ├── Title, availability, due date, points, # questions
+│       │   └── For students:
+│       │       ├── "Score: {quiz.latestScore}"
+│       │       └── "Attempts: {quiz.attemptCount}"
+│       └── Row link:
+│           ├── Student → /Courses/:cid/Quizzes/:qid/take
+│           └── Faculty → /Courses/:cid/Quizzes/:qid
+│
+├── Faculty: Quiz list (/Courses/:cid/Quizzes)
+│   ├── Same component, but:
+│   │   ├── isFaculty = true
+│   │   └── displayFacultyStudent = true (shows all quizzes)
+│   │
+│   ├── Publish toggle:
+│   │   ├── onClick → client.publishQuiz(cid, quiz._id)
+│   │   │   → PUT /api/courses/:courseId/quizzes/:quizId/publish
+│   │   └── Then refetch:
+│   │       └── GET /api/courses/:courseId/quizzes
+│   │
+│   ├── Delete:
+│   │   └── onDelete → client.deleteQuiz(cid, quiz._id)
+│   │       → DELETE /api/courses/:courseId/quizzes/:quizId
+│   │
+│   └── "+ Quiz" button:
+│       ├── onClick → client.createQuiz(cid, defaultQuiz)
+│       │   → POST /api/courses/:courseId/quizzes
+│       └── On success:
+│           └── router.push(/Courses/:cid/Quizzes/:newId/edit)
+│
+├── Quiz details screen (/Courses/:cid/Quizzes/:qid)
+│   ├── UI:
+│   │   ├── QuizDetails page
+│   │   └── Reads currentUser to branch:
+│   │       ├── Faculty → editable controls
+│   │       └── Student → read-only + "Take Quiz"
+│   │
+│   ├── Data:
+│   │   └── On load → client.findQuizById(cid, qid)
+│   │       → GET /api/courses/:courseId/quizzes/:quizId
+│   │
+│   └── Actions:
+│       ├── Faculty "Edit" → navigate to /edit
+│       └── Student "Take Quiz" → navigate to /take
+│
+├── Quiz editor (/Courses/:cid/Quizzes/:qid/edit)
+│   ├── UI:
+│   │   ├── Form for quiz settings
+│   │   └── Question list with add/update/delete
+│   │
+│   ├── Save settings:
+│   │   └── client.updateQuiz(cid, qid, updatedQuiz)
+│   │       → PUT /api/courses/:courseId/quizzes/:quizId
+│   │
+│   └── Questions:
+│       ├── Add → POST /api/courses/:courseId/quizzes/:quizId/questions
+│       ├── Update → PUT  /api/courses/:courseId/quizzes/:quizId/questions/:questionId
+│       └── Delete → DELETE /api/courses/:courseId/quizzes/:quizId/questions/:questionId
+│
+├── Take quiz (/Courses/:cid/Quizzes/:qid/take)
+│   ├── UI:
+│   │   ├── TakeQuiz page
+│   │   ├── Shows quiz questions + timer + controls
+│   │   └── Uses currentUser + quiz + attempt state
+│   │
+│   ├── Start attempt:
+│   │   ├── "Start Quiz" button → client.startAttempt(cid, qid)
+│   │   │   → POST /api/courses/:courseId/quizzes/:quizId/attempts
+│   │   │   → Backend:
+│   │   │       ├── Reads req.session.currentUser
+│   │   │       ├── Count attempts for (student, quiz)
+│   │   │       └── Enforce multipleAttempts/howManyAttempts
+│   │   │           ├── If blocked → 403 + { error: "No attempts remaining" }
+│   │   │           └── Else create QuizAttempt and return it
+│   │   └── Frontend:
+│   │       ├── On success: store attemptId, load questions
+│   │       └── On 403: toast(error.response.data.error)
+│   │
+│   ├── Save answers (draft / auto-save):
+│   │   └── client.saveAttempt(cid, qid, attemptId, answers)
+│   │       → PUT /api/courses/:courseId/quizzes/:quizId/attempts/:attemptId
+│   │
+│   └── Submit:
+│       ├── "Submit Quiz" → client.submitAttempt(cid, qid, attemptId, answers)
+│       │   → POST /api/courses/:courseId/quizzes/:quizId/attempts/:attemptId/submit
+│       │   → Backend grades and returns graded attempt
+│       └── Frontend shows score + per-question feedback
+│
+└── Attempts list (for analytics)
+    ├── Faculty:
+    │   └── client.getAttempts(cid, qid)
+    │       → GET /api/courses/:courseId/quizzes/:quizId/attempts
+    │       → Returns all attempts with populated student
+    │
+    └── Student:
+        └── Same call, but backend filters to current student’s attempts

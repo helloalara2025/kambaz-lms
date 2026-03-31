@@ -1,0 +1,51 @@
+APIs
+├── Quizzes (per course)
+│   ├── GET /api/courses/:courseId/quizzes
+│   │   ├── Student:
+│   │   │   ├── Returns ONLY published quizzes
+│   │   │   └── Each quiz has latestScore + attemptCount
+│   │   └── Faculty:
+│   │       └── Returns ALL quizzes (no scores)
+│   │
+│   ├── GET /api/courses/:courseId/quizzes/:quizId
+│   │   └── Get single quiz (details)
+│   │
+│   ├── POST /api/courses/:courseId/quizzes
+│   │   └── Create quiz (FACULTY)
+│   │
+│   ├── PUT /api/courses/:courseId/quizzes/:quizId
+│   │   └── Update quiz (FACULTY)
+│   │
+│   ├── DELETE /api/courses/:courseId/quizzes/:quizId
+│   │   └── Delete quiz (FACULTY)
+│   │
+│   └── PUT /api/courses/:courseId/quizzes/:quizId/publish
+│       └── Toggle publish (FACULTY)
+│
+├── Questions (per quiz)
+│   ├── POST /api/courses/:courseId/quizzes/:quizId/questions
+│   │   └── Add question (FACULTY)
+│   │
+│   ├── PUT /api/courses/:courseId/quizzes/:quizId/questions/:questionId
+│   │   └── Update question (FACULTY)
+│   │
+│   └── DELETE /api/courses/:courseId/quizzes/:quizId/questions/:questionId
+│       └── Delete question (FACULTY)
+│
+└── Attempts (per quiz)
+    ├── GET /api/courses/:courseId/quizzes/:quizId/attempts
+    │   ├── FACULTY: all attempts, all students
+    │   └── STUDENT: only current student’s attempts
+    │
+    ├── GET /api/courses/:courseId/quizzes/:quizId/attempts/latest
+    │   └── Latest attempt for current student
+    │
+    ├── POST /api/courses/:courseId/quizzes/:quizId/attempts
+    │   ├── Start attempt for current student
+    │   └── Enforces multipleAttempts / howManyAttempts
+    │
+    ├── POST /api/courses/:courseId/quizzes/:quizId/attempts/:attemptId/submit
+    │   └── Submit + grade attempt
+    │
+    └── PUT /api/courses/:courseId/quizzes/:quizId/attempts/:attemptId
+        └── Save answers (draft) for attempt

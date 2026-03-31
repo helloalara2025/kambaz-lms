@@ -1,0 +1,24 @@
+Root Dashboard (/)
+├── Faculty View: Courses created
+└── Student View: Courses enrolled
+
+Course Home (/Courses/:cid)
+├── Home
+├── Modules
+├── Assignments
+└── Quizzes
+    │
+    ├── Quiz List (/Courses/:cid/Quizzes)
+    │   ├── Faculty:
+    │   │   ├── + Quiz (create, redirect to edit)
+    │   │   └── Each quiz row:
+    │   │       ├── Title (click → details)
+    │   │       ├── Availability, Due, Points, # Questions
+    │   │       ├── Publish toggle
+    │   │       └── 3-dot menu (Edit, Delete, Publish, Preview)
+    │   │
+    │   └── Student:
+    │       └── Each quiz row:
+    │           ├── Title (click → take)
+    │           ├── Availability, Due, Points, # Questions
+    │   
